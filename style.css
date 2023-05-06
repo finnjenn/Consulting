@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    font-family: 'Oxygen', arial, helvetica, sans-serif;
+    font-weight: 300;
+}
+button {
+    cursor: pointer;
+}
+nav {
+    background-color: rgb(12, 60, 96);
+    color:rgb(239, 248, 255);
+    position: sticky;
+    top: 0;
+}
+#navbox {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    justify-content: space-evenly;
+}
+#navbox li {
+    flex-grow: 1;
+    transition: ease-in-out 150ms;
+    cursor: pointer;
+    padding: 5% 0;
+}
+#navbox li:hover {
+    color:rgb(146, 187, 219);
+}
+#navbox span {
+    flex-grow: 2;
+    margin-left: 4em;
+    margin-right: 8em;
+    font-size: 1.15em;
+}
+li > i {
+    width: 1em;
+    background-color: white;
+    color:rgb(12, 60, 96);
+    padding: 4px;
+    border-radius: 12px;
+    margin-right: 0.5em;
+}
+main {
+    height: 60rem;
+    /* background-image: url("joshua-earle--87JyMb9ZfU-unsplash.jpg"); */
+    /* background-image: url("nasim-dadfar-w28Ei0Ap96w-unsplash.jpg"); */
+    /* background-image: url("rik-buiting-UFlYbAqLQic-unsplash.jpg"); */
+    background-image: url("rik-buiting-Zb-nqiQsLe4-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#motto {
+    width: 52rem; 
+    height: 16rem;
+    background-color: white;
+    text-align: center;
+    color:rgb(7, 31, 49);
+}
+#motto h1 {
+    font-size: 1.65em;
+    margin: 1.30em 0;
+}
+#motto h2 {
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75em;
+}
+#motto button {
+    background-color: white;
+    color:rgb(12, 60, 96);
+    border: 1px solid rgb(12, 60, 96);
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 1.25rem 2.5rem;
+    transition: ease-in-out 200ms;
+}
+#motto button:hover {
+    color: white;
+    background-color: rgb(12, 60, 96);
+}
+#info {
+    margin-bottom: 8rem;
+}
+.infobox {
+    display: flex;
+    justify-content: space-around;
+}
+#titles {
+    font-size: 2.25em;
+    color:rgb(7, 31, 49);
+    margin-top: 9rem;
+    letter-spacing: 0.1em;
+}
+#text span{
+    color:rgb(53, 56, 58);
+    line-height: 2rem;
+    margin: 0 4rem;
+    margin-top: 3.75rem;
+}
+
+#morebtn button {
+    color: white;
+    background-color: rgb(12, 60, 96);
+    padding: 1rem 3rem;
+    border: 1px solid rgb(12, 60, 96);
+    font-size: 1.05em;
+    margin-top: 3rem;
+    transition: ease-in-out 200ms;
+    letter-spacing: 0.08em;
+}
+#morebtn button:hover {
+    color:rgb(12, 60, 96);
+    background-color: white;
+}
+#about {
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(220, 239, 255, 0.863), 
+        rgba(220, 239, 255, 0.863)
+      ),url("nicole-kuhn-03VeN3r0eg8-unsplash.jpg");
+    background-size: cover;
+}
+#about h1 {
+    font-size: 2em;
+    color:rgb(7, 31, 49);
+    letter-spacing: 0.08em;
+    padding-top: 7rem;
+}
+#about p {
+    margin: 3rem 20rem;
+    line-height: 2.5rem;
+}
+#about button {
+    background-color: transparent;
+    color:rgb(12, 60, 96);
+    border: 1px solid rgb(12, 60, 96);
+    font-size: 1.01em;
+    font-weight: 400;
+    padding: 1rem 2.75rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    transition: ease-in-out 200ms;
+}
+#about button:hover {
+    color: white;
+    background-color: rgb(12, 60, 96);
+}
